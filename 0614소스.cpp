@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-/*=======¾Æ¹«¼ö³ª ÀÔ·ÂÇÏ¸é ±×¼ö°¡ +or- ±¸ºÐ===========
+/*=======ì•„ë¬´ìˆ˜ë‚˜ ìž…ë ¥í•˜ë©´ ê·¸ìˆ˜ê°€ +or- êµ¬ë¶„===========
 bool IsPositive(int i)
 {
 	if (i > 0)
@@ -19,9 +19,9 @@ void swap(int *a, int *b)
 int main()
 {
 	int a;
-	cout << "¼ö ÀÔ·Â";  cin >> a;
+	cout << "ìˆ˜ ìž…ë ¥";  cin >> a;
 	int b;
-	cout << "¼ö ÀÔ·Â";  cin >> b;
+	cout << "ìˆ˜ ìž…ë ¥";  cin >> b;
 	cout << "a : " << a << endl;
 	cout << "b : " << b << endl;
 
@@ -30,7 +30,7 @@ int main()
 	cout << "b : " << b << endl;
 	/*=================Reference=====================
 	int a;
-	cout << "¾Æ¹«¼ö³ª ÀÔ·Â : ";   cin >> a;
+	cout << "ì•„ë¬´ìˆ˜ë‚˜ ìž…ë ¥ : ";   cin >> a;
 	
 	int &b = a;
 	
@@ -44,10 +44,10 @@ int main()
 	*/
 
 
-	/*=======¾Æ¹«¼ö³ª ÀÔ·ÂÇÏ¸é ±×¼ö°¡ +or- ±¸ºÐ===========
+	/*=======ì•„ë¬´ìˆ˜ë‚˜ ìž…ë ¥í•˜ë©´ ê·¸ìˆ˜ê°€ +or- êµ¬ë¶„===========
 	int num;
 	bool result;
-	cout << "¼ö ÀÔ·Â" << endl;  cin >> num;
+	cout << "ìˆ˜ ìž…ë ¥" << endl;  cin >> num;
 	result = IsPositive(num);
 	if (result == true)
 		cout << "Positive Number" << endl;
