@@ -7,7 +7,7 @@ using std::cin;
 #define _CRT_SECURE_NO_WARNINGS
 using namespace std;
 const int name_LENGTH = 20;
-/* ===========swap ÇÔ¼ö===============
+/* ===========swap í•¨ìˆ˜===============
 void swap(int *a, int *b){
 	int temp;
 	temp = *a;
@@ -21,13 +21,13 @@ void swap(char *a, char *b){
 	*b = temp;
 }
 */
-/*=============Á÷À°¸éÃ¼ Å©±â°ø½Ä ÇÔ¼ö==========
+/*=============ì§ìœ¡ë©´ì²´ í¬ê¸°ê³µì‹ í•¨ìˆ˜==========
 int BoxVolume(int length, int width, int height)
 {
 	return length*width*height;
 }
 */
-/*=================inline ¸ÅÅ©·Î?=============
+/*=================inline ë§¤í¬ë¡œ?=============
 inline int SQUARE(int x)
 {
 	return x*x;
@@ -38,14 +38,14 @@ namespace A_COM
 {
 	void function(void)
 	{
-		std::cout << "ÇÇÄ«Ãò" << std::endl;
+		std::cout << "í”¼ì¹´ì¸„" << std::endl;
 	}
 }
 namespace B_COM
 {
 	void function(void)
 	{
-		std::cout << "¶óÀÌÃò" << std::endl;
+		std::cout << "ë¼ì´ì¸„" << std::endl;
 	}
 }*/
 typedef struct _BANK
@@ -67,23 +67,23 @@ enum{ MAKE, DEPOSIT, WITHDRAW, INQUIRE, EXIT  };
 int main(void)
 {
 
-	/*=========±âº» Ãâ·Â==================
-	std::cout << "hi" << std::endl;   //±âº» Ãâ·Â¹®
+	/*=========ê¸°ë³¸ ì¶œë ¥==================
+	std::cout << "hi" << std::endl;   //ê¸°ë³¸ ì¶œë ¥ë¬¸
 	int a, b;
-	cout << "ÀÔ·Â" << endl;  //<<endlÀ» ºÙÀÌ¸é \n°ú °°Àº È¿°ú·Î ÇÑÁÙÀÌ ³»·Á°¡¼­ ÀÔ·Â µÇ°Ô µÈ´Ù.
-	cin >> a;        //c¾ğ¾îÀÇ scanf¿Í µ¿ÀÏÇÑ ¿ªÇÒ a¿¡ ¼ö ÀÔ·Â
-	cout << "ÀÔ·Â" ;  //À§¿Í µ¿ÀÏ
-	cin >> b;        //b¿¡ ¼ö ÀÔ·Â
+	cout << "ì…ë ¥" << endl;  //<<endlì„ ë¶™ì´ë©´ \nê³¼ ê°™ì€ íš¨ê³¼ë¡œ í•œì¤„ì´ ë‚´ë ¤ê°€ì„œ ì…ë ¥ ë˜ê²Œ ëœë‹¤.
+	cin >> a;        //cì–¸ì–´ì˜ scanfì™€ ë™ì¼í•œ ì—­í•  aì— ìˆ˜ ì…ë ¥
+	cout << "ì…ë ¥" ;  //ìœ„ì™€ ë™ì¼
+	cin >> b;        //bì— ìˆ˜ ì…ë ¥
 	int result = a + b;
-	cout << "ÃÑ ÇÕ"<<result << endl;         //ÃÑÇÕÀÌ¶ó´Â ¹®ÀÚ¿­À» Ãâ·ÂÇÏ°í ±× µÚ¿¡ resultÀÇ °ªÀ» ³Ö´Â´Ù.
+	cout << "ì´ í•©"<<result << endl;         //ì´í•©ì´ë¼ëŠ” ë¬¸ìì—´ì„ ì¶œë ¥í•˜ê³  ê·¸ ë’¤ì— resultì˜ ê°’ì„ ë„£ëŠ”ë‹¤.
 	*/
 
 
-	/*==========ÀÔ·Â¹ŞÀº µÎ¼öÀÇ ÇÕ=================
+	/*==========ì…ë ¥ë°›ì€ ë‘ìˆ˜ì˜ í•©=================
 	int a, b;
 	int result = 0;
-	cout << "ÀÔ·Â : ";         //Ãâ·Â¹®
-	cin >> a >> b;				//a, b ÀÔ·Â
+	cout << "ì…ë ¥ : ";         //ì¶œë ¥ë¬¸
+	cin >> a >> b;				//a, b ì…ë ¥
 
 	if (a < b)
 	{
@@ -96,35 +96,35 @@ int main(void)
 			result += i;
 	}
 
-	cout << "µÎ¼öÀÇ ÇÕÀº" <<result <<endl;
+	cout << "ë‘ìˆ˜ì˜ í•©ì€" <<result <<endl;
 	*/
 
 
 	/*==========================
 	char name[10];
 	char lang[20];
-	cout << "ÀÌ¸§Àº : ";
+	cout << "ì´ë¦„ì€ : ";
 	cin >> name;
 	cout << "favorit lang :";
 	cin >> lang;
 
-	cout << " ÀÌ¸§ : " << name << endl;
-	cout << "¾ğ¾î : " << lang << endl;
+	cout << " ì´ë¦„ : " << name << endl;
+	cout << "ì–¸ì–´ : " << lang << endl;
 	*/
 
 
-	/*======= ÀÔ·Â ¹ŞÀº 10°³ÀÇ ¼ö ÃÑÇÕ±¸ÇÏ±â==========
+	/*======= ì…ë ¥ ë°›ì€ 10ê°œì˜ ìˆ˜ ì´í•©êµ¬í•˜ê¸°==========
 	int q, w, e, r, a, s, d, f, z, x, sum ;
 	cin >> q >> w >> e >> r >> a >> s >> d >> f >> z >> x;
-	cout << "ÃÑÇÕ : ";
+	cout << "ì´í•© : ";
 	sum = q + w + e + r + a + s + d + f + z + x;
 	cout << sum << endl;
 	*/
 
-	/*===== ±¸±¸´Ü2~9==========
+	/*===== êµ¬êµ¬ë‹¨2~9==========
 	int num;
 	int sum = 0;
-	cout << "ÇÏ³ªÀÇ ¼ö ÀÔ·Â";
+	cout << "í•˜ë‚˜ì˜ ìˆ˜ ì…ë ¥";
 	cin >> num;
 	for (int i = 1; i < 10; i++)
 	{
@@ -139,7 +139,7 @@ int main(void)
 	*/
 
 
-	/* =======swap ÇÔ¼ö============
+	/* =======swap í•¨ìˆ˜============
 	int num1 = 20, num2 = 30;
 	swap(&num1, &num2);
 	cout << num1 << ' ' << num2 << endl;
@@ -150,16 +150,16 @@ int main(void)
 	*/
 
 
-	/*=======Á÷À°¸éÃ¼ Å©±â ±¸ÇÏ±â=====
+	/*=======ì§ìœ¡ë©´ì²´ í¬ê¸° êµ¬í•˜ê¸°=====
 	int a, b, c;
-	cout << "Á¤¼ö ¼¼ÀÚ¸® ÀÔ·Â" << endl;
+	cout << "ì •ìˆ˜ ì„¸ìë¦¬ ì…ë ¥" << endl;
 	cin >> a >> b >> c;
-	cout << "Á÷À°¸éÃ¼ÀÇ Å©±â´Â";
+	cout << "ì§ìœ¡ë©´ì²´ì˜ í¬ê¸°ëŠ”";
 	cout << BoxVolume(a, b, c) <<"cm"<< endl;
 	*/
 
 
-	/*=================inline ¸ÅÅ©·Î?=============
+	/*=================inline ë§¤í¬ë¡œ?=============
 	int num;
 	cin >> num;
 	
@@ -172,12 +172,12 @@ int main(void)
 	B_COM::function();
 	*/
 
-cout << "ÀºÇà°èÁÂ °ü¸® ÇÁ·Î±×·¥" << endl;
+cout << "ì€í–‰ê³„ì¢Œ ê´€ë¦¬ í”„ë¡œê·¸ë¨" << endl;
 int choice;
 while (1)
 {
 	menu();
-	cout << "¸Ş´º ¼±ÅÃ : "; cin >> choice;
+	cout << "ë©”ë‰´ ì„ íƒ : "; cin >> choice;
 
 	switch (choice)
 	{
@@ -212,11 +212,11 @@ while (1)
 void menu()
 {
 	cout << "==========MENU==========" << endl;
-	cout << "====1.°èÁÂ °³¼³====" << endl;
-	cout << "====2.ÀÔ±İ====" << endl;
-	cout << "====3.Ãâ±İ====" << endl;
-	cout << "====4.ÀÜ¾× Á¶È¸====" << endl;
-	cout << "====5.ÇÁ·Î±×·¥ Á¾·á====" << endl<<endl;
+	cout << "====1.ê³„ì¢Œ ê°œì„¤====" << endl;
+	cout << "====2.ì…ê¸ˆ====" << endl;
+	cout << "====3.ì¶œê¸ˆ====" << endl;
+	cout << "====4.ì”ì•¡ ì¡°íšŒ====" << endl;
+	cout << "====5.í”„ë¡œê·¸ë¨ ì¢…ë£Œ====" << endl<<endl;
 }
 
 void MakeBank()
@@ -225,10 +225,10 @@ void MakeBank()
 	char name[name_LENGTH];
 	int balance;
 
-	cout << "===°èÁÂ°³¼³===" << endl;
-	cout << "°èÁÂ ID :"; cin >> id;
-	cout << "ÀÌ ¸§ :"; cin >> name;
-	cout << "ÀÔ±İ¾× :"; cin >> balance;
+	cout << "===ê³„ì¢Œê°œì„¤===" << endl;
+	cout << "ê³„ì¢Œ ID :"; cin >> id;
+	cout << "ì´ ë¦„ :"; cin >> name;
+	cout << "ì…ê¸ˆì•¡ :"; cin >> balance;
 
 	Array[index].id=id;
 	strcpy_s(Array[index].name, name);
@@ -243,19 +243,19 @@ void Deposit()
 	int money;
 	int id;
 
-	cout << "°èÁÂ ID"; cin >> id;
-	cout << "ÀÔ±İ¾× :"; cin >> money;
+	cout << "ê³„ì¢Œ ID"; cin >> id;
+	cout << "ì…ê¸ˆì•¡ :"; cin >> money;
 
 	for (int i = 0; i < index; i++)
 	{
 		if (Array[i].id == id)
 		{
 			Array[i].balance += money;
-			cout << "ÀÔ±İ ¿Ï·á" << endl;
+			cout << "ì…ê¸ˆ ì™„ë£Œ" << endl;
 			return;
 		}
 	}
-	cout << "¾ø´Â IDÀÔ´Ï´Ù." << endl;
+	cout << "ì—†ëŠ” IDì…ë‹ˆë‹¤." << endl;
 }
 
 void Withdraw()
@@ -263,8 +263,8 @@ void Withdraw()
 	int money;
 	int id;
 	
-	cout << "°èÁÂ ID : "; cin >> id;      
-	cout << "Ã£À» ±İ¾× :"; cin >> money;
+	cout << "ê³„ì¢Œ ID : "; cin >> id;      
+	cout << "ì°¾ì„ ê¸ˆì•¡ :"; cin >> money;
 
 	for (int i = 0; i < index; i++)
 	{
@@ -272,22 +272,22 @@ void Withdraw()
 		{
 			if (Array[i].balance < money)
 			{
-				cout << "ÀÜ¾× ºÎÁ·" << "endl";
+				cout << "ì”ì•¡ ë¶€ì¡±" << "endl";
 			}
 			Array[i].balance -= money;
-			cout << "Ãâ±İ ¿Ï·á" << endl;
+			cout << "ì¶œê¸ˆ ì™„ë£Œ" << endl;
 			return;
 		}
 	}
-	cout << "¾ø´Â IDÀÔ´Ï´Ù." << endl;
+	cout << "ì—†ëŠ” IDì…ë‹ˆë‹¤." << endl;
 }
 
 void Inquire()
 {
 	for (int i = 0; i < index; i++)
 	{
-		cout << "°èÁÂ ID :" << Array[i].id << endl;
-		cout << "±İ¾× :" << Array[i].balance << endl;
-		cout << "ÀÌ¸§ :" << Array[i].name << endl;
+		cout << "ê³„ì¢Œ ID :" << Array[i].id << endl;
+		cout << "ê¸ˆì•¡ :" << Array[i].balance << endl;
+		cout << "ì´ë¦„ :" << Array[i].name << endl;
 	}
 }
