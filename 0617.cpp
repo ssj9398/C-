@@ -14,17 +14,17 @@ void Show()
 {
 	for (int i=0; i < number; i++)
 	{	
-	cout << "°³ÀÎÁ¤º¸" << endl;
-	cout << "1. ÀÌ¸§ : " << Array[i].name << endl;
-	cout << "2. ³ªÀÌ : " << Array[i].age << endl;
+	cout << "ê°œì¸ì •ë³´" << endl;
+	cout << "1. ì´ë¦„ : " << Array[i].name << endl;
+	cout << "2. ë‚˜ì´ : " << Array[i].age << endl;
 	cout << "3. I D : " << Array[i].personID << endl;
 }
 }
 
 void menu()
 {
-	cout << "1.°³ÀÎÁ¤º¸Ãß°¡" << endl;
-	cout << "2.°³ÀÎÁ¤º¸Á¶È¸" << endl;
+	cout << "1.ê°œì¸ì •ë³´ì¶”ê°€" << endl;
+	cout << "2.ê°œì¸ì •ë³´ì¡°íšŒ" << endl;
 }
 
 void add()
@@ -32,11 +32,11 @@ void add()
 	int age;
 	char name[20];
 	char personID[20];
-	cout << "°³ÀÎ Á¤º¸ Ãß°¡" << endl;
-	cout << "1. ÀÌ¸§ : "; cin>>name;
-	cout << "2. ³ªÀÌ : "; cin >> age;
+	cout << "ê°œì¸ ì •ë³´ ì¶”ê°€" << endl;
+	cout << "1. ì´ë¦„ : "; cin>>name;
+	cout << "2. ë‚˜ì´ : "; cin >> age;
 	cout << "3. I D : "; cin >> personID;
-	cout << " °³ÀÎÁ¤º¸ Ãß°¡¿Ï·á" << endl;
+	cout << " ê°œì¸ì •ë³´ ì¶”ê°€ì™„ë£Œ" << endl;
 
 	strcpy_s(Array[number].name, name);
 	Array[number].age, age;
@@ -51,7 +51,7 @@ int main()
 	while (1)
 	{
 		menu();
-		cout << "¸Þ´º ¹øÈ£ ÀÔ·Â :"; cin >> select;
+		cout << "ë©”ë‰´ ë²ˆí˜¸ ìž…ë ¥ :"; cin >> select;
 		switch (select)
 		{
 		case 1:
