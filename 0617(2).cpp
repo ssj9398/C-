@@ -1,5 +1,5 @@
 #include <iostream>
-/*********°³ÀÎÁ¤º¸ ±¸Á¶Ã¼**********
+/*********ê°œì¸ì •ë³´ êµ¬ì¡°ì²´**********
 using namespace std;
 
 typedef struct Person{
@@ -15,18 +15,18 @@ void Show()
 {
 	for (int i=0; i < number; i++)
 	{	
-	cout << "°³ÀÎÁ¤º¸" << endl;
-	cout << "1. ÀÌ¸§ : " << Array[i].name << endl;
-	cout << "2. ³ªÀÌ : " << Array[i].age << endl;
+	cout << "ê°œì¸ì •ë³´" << endl;
+	cout << "1. ì´ë¦„ : " << Array[i].name << endl;
+	cout << "2. ë‚˜ì´ : " << Array[i].age << endl;
 	cout << "3. I D : " << Array[i].personID << endl<<endl;
 }
 }
 
 void menu()
 {
-	cout << "***°³ÀÎÁ¤º¸***" << endl;
-	cout << "1.°³ÀÎÁ¤º¸Ãß°¡" << endl;
-	cout << "2.°³ÀÎÁ¤º¸Á¶È¸" << endl<<endl;
+	cout << "***ê°œì¸ì •ë³´***" << endl;
+	cout << "1.ê°œì¸ì •ë³´ì¶”ê°€" << endl;
+	cout << "2.ê°œì¸ì •ë³´ì¡°íšŒ" << endl<<endl;
 }
 
 void add()
@@ -34,11 +34,11 @@ void add()
 	int age;
 	char name[20];
 	char personID[20];
-	cout << "°³ÀÎ Á¤º¸ Ãß°¡" << endl;
-	cout << "1. ÀÌ¸§ : "; cin>>name;
-	cout << "2. ³ªÀÌ : "; cin >> age;
+	cout << "ê°œì¸ ì •ë³´ ì¶”ê°€" << endl;
+	cout << "1. ì´ë¦„ : "; cin>>name;
+	cout << "2. ë‚˜ì´ : "; cin >> age;
 	cout << "3. I D : "; cin >> personID;
-	cout << " °³ÀÎÁ¤º¸ Ãß°¡¿Ï·á" << endl<<endl;
+	cout << " ê°œì¸ì •ë³´ ì¶”ê°€ì™„ë£Œ" << endl<<endl;
 
 	strcpy_s(Array[number].name, name);
 	Array[number].age, age;
@@ -54,7 +54,7 @@ int main()
 	{
 
 		menu();
-		cout << "¸Ş´º ¹øÈ£ ÀÔ·Â :"; cin >> select;
+		cout << "ë©”ë‰´ ë²ˆí˜¸ ì…ë ¥ :"; cin >> select;
 		switch (select)
 		{
 		case 1:
@@ -71,7 +71,7 @@ int main()
 */
 
 
-/******±¸Á¶Ã¼¸¦ ÀÌ¿ëÇÑ call-by value*******
+/******êµ¬ì¡°ì²´ë¥¼ ì´ìš©í•œ call-by value*******
 using namespace std;
 
 typedef struct Person{
@@ -82,17 +82,17 @@ typedef struct Person{
 
 void show(Person p)
 {
-	cout << "°³ÀÎÁ¤º¸Á¶È¸" << endl;
-	cout << "ÀÌ ¸§ :"<< p.name <<endl;
-	cout << "³ª ÀÌ :"<< p.age<< endl;
+	cout << "ê°œì¸ì •ë³´ì¡°íšŒ" << endl;
+	cout << "ì´ ë¦„ :"<< p.name <<endl;
+	cout << "ë‚˜ ì´ :"<< p.age<< endl;
 	cout << "I D :" << p.personID <<endl;
 }
 
 int main()
 {
 	Person man;
-	cout << "ÀÌ ¸§ :"; cin >> man.name;
-	cout << "³ª ÀÌ :"; cin >> man.age;
+	cout << "ì´ ë¦„ :"; cin >> man.name;
+	cout << "ë‚˜ ì´ :"; cin >> man.age;
 	cout << "I D :"; cin >> man.personID;
 
 	show(man);
@@ -102,7 +102,7 @@ int main()
 */
 
 
-/*********µ¿Àû ¸Ş¸ğ¸® ÇÒ´ç°úNULLÆ÷ÀÎÅÍ ¸®ÅÏ********
+/*********ë™ì  ë©”ëª¨ë¦¬ í• ë‹¹ê³¼NULLí¬ì¸í„° ë¦¬í„´********
 //#define DEBUG 1
 #define DEBUG 0
 using namespace std;
@@ -110,13 +110,13 @@ using namespace std;
 int main()
 {
 	int size;
-	cout << "¸Ş¸ğ¸® ÇÒ´çÇÏ°íÀÚ ÇÏ´Â ¹è¿­ÀÇ Å©±â"; cin >> size;
+	cout << "ë©”ëª¨ë¦¬ í• ë‹¹í•˜ê³ ì í•˜ëŠ” ë°°ì—´ì˜ í¬ê¸°"; cin >> size;
 
 	int* array = new int[size];
 	#if DEBUG==1
-	if (array==NULL)           //#define DEBUG°¡ 1ÀÌ ¾Æ´Ñ°æ¿ì ÄÄÆÄÀÏ Á¦¿ÜµÈ´Ù.
+	if (array==NULL)           //#define DEBUGê°€ 1ì´ ì•„ë‹Œê²½ìš° ì»´íŒŒì¼ ì œì™¸ëœë‹¤.
 	{
-		cout << "¸Ş¸ğ¸® ÇÒ´ç ½ÇÆĞ" << endl;
+		cout << "ë©”ëª¨ë¦¬ í• ë‹¹ ì‹¤íŒ¨" << endl;
 		return -1;
 	}
 	#endif
