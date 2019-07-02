@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include <windows.h>
+
+typedef struct Point
+{
+	int x, y, z;
+};
+
+
+DWORD WINAPI MyThread(LPVOID arg)
+{
+	Point* pt = (Point*)arg;
+	while(1)
+	{
+		printf("Running MyThread() %d : %c %c %c \n", GetCurrentThreadId(), pt->x, pt->y, pt->z);
+		Sleep(1000);
+	}
+	return 0;
+}
+
+CwinThread* AfxBeginThread(
+						   AFX_THREADPROC pfnThreadProc,
+						   LPVOID pParam,
+						   int nPriority = THREAD_PRIORITY_NORMAL,
+						   UINT nStackSize = 0,
+						   DWORD dwCreateFlags = 0,
+						   LPSECURITY_ATTRIBUTES lpSecurityAttrs = NULL
+						   );
+
+
+
+
+
+
+
+
+int main(int argc, char* argv[])
+{
+	Point pt1 = {'A','B','C'};
+
+	HANDLE hThread1 = CreateThread(NULL, 0, MyThread, &pt1, 0, NULL);
+
+	if(hThread1 ==NULL) return 0;
+	CloseHandle(hThread1);
+
+	Point pt2 = {'D','E','F'};
+	HANDLE hThread2 = CreateThread(NULL, 0, MyThread, &pt2, 0, NULL);
+
+	if(hThread2 ==NULL) return 1;
+	CloseHandle(hThread2);
+
+	while(1)
+	{
+		
+		//printf("Running main() %d\n", GetCurrentThreadId());
+		Sleep(1000);
+	}
+
+	return 0;
+
+}
